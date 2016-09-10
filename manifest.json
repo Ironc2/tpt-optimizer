@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "TPT Optimizer",
+	"description": "Cette extension vous permet d'optimiser certaines pages sur le site interne de Télécom ParisTech (Synapses)",
+	"version": "0.1",
+	"content_scripts": [
+		{
+			"matches": ["https://synapses.telecom-paristech.fr/", "http://synapses.telecom-paristech.fr/"],
+			"css": ["synapses/edt.css"],
+			"js": ["synapses/edt.js"]
+		}
+	]
+}
