@@ -5,9 +5,20 @@
 	"version": "0.1",
 	"content_scripts": [
 		{
-			"matches": ["https://synapses.telecom-paristech.fr/", "http://synapses.telecom-paristech.fr/"],
-			"css": ["synapses/edt.css"],
+			"matches": [
+				"https://synapses.telecom-paristech.fr/",
+				"http://synapses.telecom-paristech.fr/"
+			],
+			"css": ["synapses/common.css"],
 			"js": ["synapses/edt.js"]
+		},
+		{
+			"matches": [
+				"https://synapses.telecom-paristech.fr/inscriptions-pedagogiques/demandes/*",
+				"http://synapses.telecom-paristech.fr/inscriptions-pedagogiques/demandes/*"
+			],
+			"css": ["synapses/common.css"],
+			"js": ["synapses/demandes.js"]
 		}
 	]
 }
